@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-query.css" />
+    <title>Tela de Login</title>
+  </head>
+  <body>
+    <section class="corpo">
+      <section class="imgback">
+        <img class="imagem" src="imagens/planta2.jpg" alt="" />
+      </section>
+      <div class="content">
+        <div class="logintext">
+          <h1>Login</h1>
+          <p>Bem-vindo, faça o login para continuar.</p>
+        </div>
+        <form action="login.php" method="login">
+          <div class="input-container login">
+            <label for="email">
+              <span class="material-symbols-outlined label-icon">mail</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email..."
+            />
+          </div>
+          <div class="input-container senha">
+            <label for="senha">
+              <span class="material-symbols-outlined label-icon">lock</span>
+            </label>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha..."
+            />
+          </div>
+          <div>
+            <input type="submit" value="Entrar" class="botao" />
+            <input type="submit" value="Esqueci a Senha" class="botao vazio" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
